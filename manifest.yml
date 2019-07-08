@@ -1,0 +1,12 @@
+---
+applications:
+- name: try_mqtt
+  
+  buildpack: nodejs_buildpack
+  memory: 64M
+  disk_quota: 128M
+  command: node index.js
+services:
+- rabbitmqttdemo
+env:
+  OPTIMIZE_MEMORY: true
